@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practiceTwo.css" />
+    <script src="https://code.angularjs.org/snapshot/angular.min.js"></script>
+</head>
+<body ng-app="practiceTwoApp" ng-controller="practiceTwoController">
+    <div class="headingContainer">
+        <h1 class="headingStyle">Currency converter</h1>
+    </div>
+    
+    <div class="converterContainer">
+        <input type="number" ng-model="amt" placeholder="Enter the amount"/>
+        <select ng-model="currencyFrom">
+            <option value="" hidden disabled>Select here</option>
+            <option ng-repeat="x in currencyArray" ng-bind="x.currencyName" value={{x.currencyValue}}></option>
+        </select>
+        <select ng-model="currencyTo">
+            <option value="" hidden disabled>Select here</option>
+            <option ng-repeat="x in currencyArray" ng-bind="x.currencyName" value={{x.currencyValue}}></option>
+        </select>
+        <button ng-click="convert()">Convert</button>
+        <p>{{result | currency : symbol[0].currencySymbol : 2}}</p>
+    </div>
+    
+    <script src="app.js"></script>
+    <script src="main.controller.js"></script>
+</body>
+</html>

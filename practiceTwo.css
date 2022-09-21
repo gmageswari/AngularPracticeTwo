@@ -1,0 +1,46 @@
+.headingStyle{
+    font-size: 23px;
+    text-align: center;
+    color: white;
+}
+.converterContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+    text-align: center;
+    background-color: #c1e3dc;
+    flex-wrap: wrap;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.headingContainer{
+    height: 10vh;
+    width: 100vw;
+    background-color: #18594c;
+}
+input,select{
+    height: 30px;
+    width: 200px;
+    margin: 20px;
+}
+button{
+    height: 40px;
+    width: 70px;
+    background-color: #18594c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+p{
+    width: 200px;
+    font-size: 40px;
+    color: #18594c;
+    margin-top : -100px;
+}
