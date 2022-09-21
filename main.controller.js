@@ -40,9 +40,7 @@ app.controller("practiceTwoController",function($scope){
             }
             
         });
-        $scope.currencyFrom = "";
-        $scope.currencyTo = "";
-        $scope.amt = "";
+        
         
     }
 });

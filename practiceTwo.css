@@ -27,7 +27,7 @@ body{
 }
 input,select{
     height: 30px;
-    width: 200px;
+    width: 25%;
     margin: 20px;
 }
 button{
@@ -39,8 +39,7 @@ button{
     color: white;
 }
 p{
-    width: 200px;
+    width: 25%;
     font-size: 40px;
     color: #18594c;
-    margin-top : -100px;
 }
